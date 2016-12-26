@@ -7,12 +7,13 @@ using System.Web.Http;
 
 namespace WebApplication1.Controllers
 {
-    [Authorize]
     public class ValuesController : ApiController
     {
         // GET api/values
         public IEnumerable<string> Get()
         {
+            string test = null;
+            test.ToString(); //error
             return new string[] { "value1", "value2" };
         }
 
